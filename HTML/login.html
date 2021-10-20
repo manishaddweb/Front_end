@@ -13,6 +13,28 @@
             height:30px;
             font-weight: bolder;
         }
+        .bg:focus
+        {
+            background-color: red;
+            color:#ffffff;
+        }
+        .bg:hover
+        {
+            background-color: orchid;
+            color: maroon;
+        }
+        p {
+            display: none;
+            background-color: magenta;
+            padding: 20px;
+            text-align:center;
+        }
+
+        div:hover p {
+            display: block;
+            font-weight: bolder;
+            text-align:center;
+        }
         button
         {
             padding-left: 25px;
@@ -32,7 +54,11 @@
     </style>
 </head>
 <body>
-    <form method="post">
+    <div align=center>Please LOGIN
+    <p>HELLO...! Good Morning...!!!</p>
+    </div>
+    <hr color="orange" size="5" width="100%">
+    <form method="post" action="index.html">
         <h1 align="center">Simple form</h1>
         <hr color="red" size="5" width="50%">
         <table align="center" bgcolor="#CC9900" cellpadding="10" cellspacing="10">
@@ -41,21 +67,18 @@
             </tr>
 			<tr>
 				<th>User : </th>
-				<th><input type="text" name="user" class="bg"></th>
+				<th><input type="text" name="user" class="bg" required></th>
 			</tr>
 			<tr>
 				<th>Password : </th>
-				<th><input type="password" name="password" class="bg"></th>
+				<th><input type="password" name="password" class="bg" required></th>
 			</tr>
 			
 			<tr>
 				<th colspan="2">
                     <!-- <button onclick="window.location.href = 'http:\\C:\wamp64\www\Programs\ADDWEB\index.html'" class="bg">Submit</button> -->
-                    <!-- <input type="submit" name="submit" value="Submit" class="bg"> -->
-                    <a href="index.html" style="text-decoration: none;"> 
-                        <input type="button" value="Submit" class="bg">
-                    </a>
-               </th>
+                    <input type="submit" name="submit" value="Submit" class="bg">
+                </th>
 			</tr>
         </table>
         <hr color="red" size="5" width="50%">
