@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            }
+
+        .navbar {
+        overflow: hidden;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: -3%;
+        font-weight: bolder;
+        }
+
+.navbar a {
+  float: right;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  
+  margin-left: 10px;
+}
+.navbar a:hover {
+  background-color: red;
+  color:white;
+}
+
+        .dot {
+          height: 65px;
+          width: 65px;
+          background-color: red;
+          border-radius: 50%;
+          display: inline-block;
+          margin-left: -95%;
+        }
+        * {
+        box-sizing: border-box;
+        }
+
+      
+
+        /* Style the header */
+        header {
+        background-color:steelblue;
+        padding: 15px;
+        text-align: center;
+        font-size: 25px;
+        color: black;
+        
+        }
+
+        /* Create two columns/boxes that floats next to each other */
+        nav {
+        float: left;
+        width: 25%;
+        height: 450px; /* only for demonstration, should be removed */
+        padding: 20px;
+        margin-top: -10px;
+        margin-bottom: 10px;
+        margin-left: -20px;
+        }
+        img
+        {
+            width: 320px;
+            height: 450px;
+        }
+        /* Style the list inside the menu */
+        nav ul {
+        list-style-type: none;
+        padding: 0;
+        }
+        
+        a:hover
+        {
+            color:red;
+            background-color: pink;
+        }
+        article {
+        float: left;
+        padding: 20px;
+        width: 74%;
+        background-color: #fffb00;
+        height: 450px; /* only for demonstration, should be removed */
+        margin-bottom: 10px;
+        margin-top: 10px;
+        margin-left: 30px;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+        content: "";
+        display: table;
+        clear: both;
+        }
+
+        /* Style the footer */
+        footer {
+         background-color:steelblue;
+        padding: 7px;
+        text-align: center;
+        color: black;
+        font-size: 19px;
+        font-weight: bolder;
+        }
+
+        </style>
+</head>
+<body>
+    
+	<!-- <img src="myimage.jpeg" style="border-radius: 200px; height: 60px; width: 60px;"> -->
+    
+<header>
+    <span class="dot"></span>
+    <p style="margin-left: -50%;margin-top: -5%;">Manish Thakkar</p>
+    <div class="navbar">
+        <a href="contact.html">Contact</a>
+        <a href="reels.html">Reels</a>
+        <a href="about.html">About</a>
+        <a href="login.html">Home</a>
+    </div>
+</header>
+
+<section>
+  <nav>
+    <img src="myimage.jpeg" alt="">
+  </nav>
+  
+  <article>
+    <h1 style="text-align: center;margin-top: 18%;">Write and place any Content</h1>
+
+  </article>
+</section>
+
+<footer>
+  <p>@copyright:2020-21</p>
+</footer>
+</body>
+</html>
