@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	<style>
+        
+        .bg
+        {
+            background-color:darkcyan;
+            height:30px;
+            font-weight: bolder;
+        }
+        .bg:focus
+        {
+            background-color: red;
+            color:#ffffff;
+        }
+        .bg:hover
+        {
+            background-color: orchid;
+            color: maroon;
+        }
+        p {
+            display: none;
+            background-color: magenta;
+            padding: 20px;
+            text-align:center;
+        }
+
+        div:hover p {
+            display: block;
+            font-weight: bolder;
+            text-align:center;
+        }
+        button
+        {
+            padding-left: 25px;
+            padding-right: 25px;
+            font-weight: bolder;
+            margin-top: 35px;
+            height: 30px;
+        }
+        table{
+            border-radius: 20px;
+        }
+        input[type=submit]
+        {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div align=center>Please LOGIN
+    <p>HELLO...! Good Morning...!!!</p>
+    </div>
+    <hr color="orange" size="5" width="100%">
+    <form method="post" action="index.html">
+        <h1 align="center">Simple form</h1>
+        <hr color="red" size="5" width="50%">
+        <table align="center" bgcolor="#CC9900" cellpadding="10" cellspacing="10">
+            <tr>
+                <th colspan="2" style="background-color:darkcyan;">LOGIN FORM</th>
+            </tr>
+			<tr>
+				<th>User : </th>
+				<th><input type="text" name="user" class="bg" required></th>
+			</tr>
+			<tr>
+				<th>Password : </th>
+				<th><input type="password" name="password" class="bg" required></th>
+			</tr>
+			
+			<tr>
+				<th colspan="2">
+                    <!-- <button onclick="window.location.href = 'http:\\C:\wamp64\www\Programs\ADDWEB\index.html'" class="bg">Submit</button> -->
+                    <input type="submit" name="submit" value="Submit" class="bg">
+                </th>
+			</tr>
+        </table>
+        <hr color="red" size="5" width="50%">
+    </form>
+</body>
+</html>

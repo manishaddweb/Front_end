@@ -1,0 +1,136 @@
+<html>
+<head>
+	<title>Contact US</title>
+	<style>
+	.title
+        {
+            width:22%;
+            margin-left: 15px;
+            border:5px double blue;
+        }
+		body{
+            font-family: Arial, Helvetica, sans-serif;
+            }
+
+        .navbar{
+			overflow: hidden;
+			font-family: Arial, Helvetica, sans-serif;
+			margin-top: -3%;
+			font-weight: bolder;
+			}
+
+		.navbar a {
+			float: right;
+		    font-size: 16px;
+		    color: black;
+		    text-align: center;
+		    padding: 14px 16px;
+		    text-decoration: none;
+			margin-left: 10px;
+		}
+		.navbar a:hover {
+			background-color: red;
+			color:white;
+		}
+
+        .dot {
+			height: 65px;
+			width: 65px;
+			background-color: red;
+			border-radius: 50%;
+			display: inline-block;
+			margin-left: -95%;
+        }
+        * {
+			box-sizing: border-box;
+        }
+
+        header {
+			background-color:steelblue;
+			padding: 15px;
+			text-align: center;
+			font-size: 25px;
+			color: black;
+        
+        }
+		input[type=submit]
+		{
+			padding-top:10px;
+			padding-bottom:10px;
+			padding-left:20px;
+			padding-right:20px;
+			font-weight:bolder;
+			background-color:blue;
+		}
+		.button:hover
+		{
+			background-color:red;
+			color:white;
+		}
+		input[type=reset]
+		{
+			padding-top:10px;
+			padding-bottom:10px;
+			padding-left:20px;
+			padding-right:20px;
+			font-weight:bolder;
+			margin-left:20px;
+			background-color:orange;
+		}
+	</style>
+</head>
+<body>
+	<header>
+    <span class="dot"></span>
+    <p style="margin-left: -50%;margin-top: -5%;">Manish Thakkar</p>
+    <div class="navbar">
+        <a href="contact.html">Contact</a>
+        <a href="reels.html">Reels</a>
+        <a href="about.html">About</a>
+        <a href="login.html">Home</a>
+    </div>
+	</header>
+	<hr color=red size=5>
+    <h1 align=center style="color:mediumorchid;">Contact US</h1>
+    <hr color=red size=5>
+	
+	<form name=f1 method="post">
+		<table style="background-color: lime;padding:20px;border:3px red solid;border-radius:15px;" align=center cellpadding=3 cellspacing=2>
+			<tr>
+				<th colspan=2>Contact US</th>
+			</tr>
+			<tr>
+				<th>First Name : </th>
+				<th><input type=text name=fname placeholder="First Name" required></th>
+			</tr>
+			<tr>
+				<th>Last Name : </th>
+				<th><input type=text name=lname placeholder="Last Name" required></th>
+			</tr>
+			<tr>
+				<th>Email : </th>
+				<th><input type=email name=email placeholder="Email" required></th>
+			</tr>
+			<tr>
+				<th>Contact : </th>
+				<th><input type=number maxlength=10 placeholder="Contact Number" required></th>
+			</tr>
+			<tr>
+				<th>Address : </th>
+				<th><textarea rows=5 cols=21 name=address required></textarea>
+			</tr>
+			<tr>
+				<th>Remark : </th>
+				<th><textarea rows=5 cols=21 name=remark required></textarea>
+			</tr>
+			<tr>
+				<th style="padding-top:20px;" colspan=2>
+					<input class=button type=submit name=submit value="Submit">
+					<input class=button type=reset name=reset value="Reset">
+				</th>
+			</tr>
+		</table>
+	</form>
+	<hr color=blue width=50% size=5>
+</body>
+</html>
